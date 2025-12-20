@@ -1,0 +1,478 @@
+/* ============================= */
+/* RESET & GLOBAL */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFF4C7;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* agar anchor tidak ketutup navbar */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #FFF4C7;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #FF8A00;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.nav nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  padding: 50px 40px;
+}
+
+.pill {
+  display: inline-block;
+  background: #DFF2E1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+
+.hero p {
+  max-width: 520px;
+}
+
+/* CTA */
+.cta {
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.primary {
+  background: #FF7A00;
+  color: white;
+}
+
+.outline {
+  border: 2px solid #2E7D6B;
+  color: #2E7D6B;
+  margin-left: 10px;
+}
+
+/* TRUST */
+.trust {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.lvl {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a { background: #2E7D6B; }
+.b { background: #FF7A00; }
+.c { background: #F5C400; }
+
+/* ============================= */
+/* PLAN CARD */
+/* ============================= */
+.plan {
+  background: #FFF7CF;
+  padding: 25px;
+  border-radius: 28px;
+}
+
+.plan-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #7C3AED;
+}
+
+.level {
+  background: #1F766E;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.plan-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 18px;
+  font-size: 14px;
+}
+
+.progress {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.circle {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 4px solid #FF7A00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+/* ============================= */
+/* WELCOME */
+/* ============================= */
+.welcome {
+  background: white;
+  margin: 40px;
+  padding: 40px;
+  border-radius: 28px;
+}
+
+.badges {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 14px;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+.green { background: #EAF7EE; }
+.yellow { background: #FFF2C6; }
+.blue { background: #EEF4FF; }
+
+/* ============================= */
+/* HOW IT WORKS */
+/* ============================= */
+.how {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  padding: 40px;
+}
+
+.step {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orange { background: #FF7A00; }
+
+.how-right {
+  background: #1F766E;
+  color: white;
+  padding: 30px;
+  border-radius: 28px;
+}
+
+.how-right ul {
+  list-style: none;
+}
+
+.how-right li {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+/* ============================= */
+/* TESTIMONIALS */
+/* ============================= */
+.testimonials {
+  padding: 40px;
+}
+
+.testi-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.testi {
+  padding: 22px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.testi.orange { background: #FFF1DB; }
+.testi.blue { background: #EEF4FF; }
+.testi.green { background: #EAF7EE; }
+
+/* ============================= */
+/* PRICING */
+/* ============================= */
+.pricing {
+  padding: 40px;
+}
+
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.price-card {
+  background: white;
+  padding: 32px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card ul {
+  margin: 20px 0;
+  padding-left: 18px;
+}
+
+.price-card ul li {
+  margin-bottom: 10px;
+}
+
+.price-card .btn {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* POPULAR */
+.popular {
+  border: 3px solid #FF7A00;
+  position: relative;
+}
+
+.popular .badge {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: #FF7A00;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+footer {
+  background: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ============================= */
+/* 📱 TABLET */
+/* ============================= */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .how {
+    grid-template-columns: 1fr;
+  }
+
+  .testi-cards,
+  .price-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 768px) {
+
+  .nav {
+    padding: 16px;
+  }
+
+  .nav nav {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .outline {
+    margin-left: 0;
+  }
+
+  .circle {
+    position: static;
+    margin-top: 12px;
+  }
+
+  .welcome {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+
+  .pricing,
+  .testimonials,
+  .how {
+    padding: 30px 20px;
+  }
+}
+/* ===== FIX MOST POPULAR TERPOTONG ===== */
+.pricing {
+  padding-top: 80px; /* kasih ruang buat badge naik */
+  overflow: visible;
+}
+
+.price-cards {
+  overflow: visible;
+}
+
+.price-card {
+  overflow: visible;
+}
+
+/* badge benar-benar aman */
+.popular {
+  position: relative;
+}
+
+.popular .badge {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FF7A00;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 10;
+  white-space: nowrap;
+}
