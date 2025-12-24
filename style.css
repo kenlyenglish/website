@@ -348,24 +348,6 @@ section {
   width: 100%;
 }
 
-/* POPULAR */
-.popular {
-  border: 3px solid #FF7A00;
-  position: relative;
-}
-
-.popular .badge {
-  position: absolute;
-  top: -18px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #FF7A00;
-  color: white;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 700;
-}
 
 /* ============================= */
 /* FOOTER */
@@ -414,3 +396,4 @@ footer {
     margin-left: 0;
   }
 }
+
